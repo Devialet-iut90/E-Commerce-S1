@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.first {
+    width: 100%;
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: black;
+}
+
+h1,
+.paragraphe1 {
+    margin-left: 10%;
+    color: white;
+    padding-right: 50%;
+}
+
+.paragraphe1 {
+    font-size: 14px;
+}
+
+.boite {
+    display: flex;
+    padding-left: 10%;
+    margin-top: 3%;
+    padding-right: 10%;
+}
+
+.filtre {
+    position: absolute;
+    justify-content:flex-start;
+}
+
+.par3 {
+    color: #C4C4C4;
+    text-decoration-line: underline;
+}
+
+.carre {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #0D0D0D;
+    position: absolute;
+}
+
+.checkbox {
+    height: 20px;
+    width: 190px;
+}
+
+.textcheckbox {
+    margin-top: 4%;
+    height: 20px;
+    margin-left: 15%;
+    top: 50%;
+}
+
+.couleur {
+    padding-top: 1%;
+    width: 161px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.cercleOrange {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: #DF9167;
+    border: 1px solid #0D0D0D;
+}
+
+.cercleViolet {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: #7B61FF;
+    border: 1px solid #0D0D0D;
+}
+
+.cercleVert {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: #219653;
+    border: 1px solid #0D0D0D;
+}
+
+.cercleBleu {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: #2F80ED;
+    border: 1px solid #0D0D0D;
+}
+
+.cercleRouge {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: #EB5757;
+    border: 1px solid #0D0D0D;
+}
+
+.cercleBleuClair {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: #56CCF2;
+    border: 1px solid #0D0D0D;
+}
+
+.cercleGris {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: #4F4F4F;
+    border: 1px solid #0D0D0D;
+}
+
+.cercleRose {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: #BB6BD9;
+    border: 1px solid #0D0D0D;
+}
+
+.cercleBlanc {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: #F2F2F2;
+    border: 1px solid #0D0D0D;
+}
+
+.cercleVertClair {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: #6CFF97;
+    border: 1px solid #0D0D0D;
+
+
+}
+
+.gras{
+    font-weight: bold;
+}
+
+.ranger{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10%;
+}
+
+.ranger2{
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ranger1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #1C275A;
+    padding: 10px 10px 10px 10px;
+}
+
+.all{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    right: 10%;
+    width: 65%;
+    margin-top: 5%;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(116, 116, 116);
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+.article img{
+    width: 100%;
+    height: 100%;
+}
+
+.article p{
+    padding-top: 2%;
+}
+
+.more{
+    display: flex;
+    justify-content: center;
+    font-size: 130%;
+    border: 2px solid black;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    margin-left: 30%;
+}
