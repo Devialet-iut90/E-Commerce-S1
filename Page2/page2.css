@@ -41,6 +41,11 @@ h1,
 .par3 {
     color: #C4C4C4;
     text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.par3:active{
+    font-weight: bold;
 }
 
 .carre {
@@ -53,6 +58,14 @@ h1,
 .checkbox {
     height: 20px;
     width: 190px;
+}
+
+.checkbox:active{
+    font-weight: bold;
+}
+
+.checkbox:active > .carre{
+    border: 2px solid black;
 }
 
 .textcheckbox {
@@ -217,4 +230,9 @@ h1,
     justify-content: center;
     margin-left: 30%;
     margin-bottom: 2%;
+}
+
+.centrer{
+    display: flex;
+    justify-content: center;
 }
