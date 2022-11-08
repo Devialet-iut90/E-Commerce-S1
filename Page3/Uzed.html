@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Uzed - Production</title>
+    <link rel="stylesheet" href="Projet.css">
+<head>
+
+<body>
+
+  <div class="cart"> <!-- Première partie du contenue -->
+
+      <div class="slideshow-container"> <!-- Contenue des slides -->
+
+        <div class="images container"> <!-- Position des images -->
+          <div class="mySlides fade">
+            <img src="media/teeshirttroué.webp" style="height: 400px; width:400px;">
+          </div>
+            <div class="mySlides fade">
+              <img src="media/chaussettesale.jpeg">
+            </div>
+        </div>
+
+</div><br>
+
+      <div style="text-align:center"> <!-- Les points/cercles -->
+        <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+
+            <div class="block"> <!-- Deuxième partie du contenue -->
+              <div class="bord"> <!-- Dernière partie du contenue -->
+
+                <div class="container-text">
+                    <p>
+                      <td class="produit"> T-shirt troué</td><br><br>
+                      <td class="prix"> 99 €</td><br><br>
+
+                        <td class="quantité">
+                          <button class="qté-moins" id="1">-</button>
+                          <input type="text" readonly placeholder="Unité prix" class="quantité" value="1">
+                          <button class="qté-plus" id="1">+</button>
+                        </td>
+
+                          <select name="liste">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                            <option value="xl">XXL</option>
+                            <option value="xl">XXXL</option>
+                          </select><br><br>
+
+                          <td class="Total"> 0 €</td><br>
+
+                            <button class="acheter">Acheter</button>
+                            <button class="carte">Ajouter une carte</button>
+                    </p>
+                </div>
+
+                <input type="submit" class="container valider" onclick="plusSlides(1)" value="</>">
+
+              </div>
+            </div>
+          </div>
+
+
+<script src="js/panier.js"></script>
+<script src="js/slide.js"></script>
+</body>
+</html>
