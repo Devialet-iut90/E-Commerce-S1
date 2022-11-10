@@ -11,13 +11,11 @@ body{
 
 
 footer {
-    position: absolute;
     flex-shrink: 0;
     border-top: 1px solid #000;
     width: 100%;
     background: #f1f1f1;
     color: #333;
-    bottom: 0;
 }
 
 .contenu-footer{
