@@ -1,0 +1,172 @@
+* {
+    overflow-x: hidden;
+}
+
+.titre1 {
+    text-align: center;
+    position: relative;
+
+height: 62px;
+
+
+/* Heading 02 */
+
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 600px;
+font-size: 56px;
+line-height: 62px;
+/* identical to box height, or 111% */
+
+
+letter-spacing: -2.4px;
+
+/* Text Primary */
+
+color: #000000;
+}
+
+.transtext {
+    text-align: center;
+
+
+position: relative;
+padding-top: 10px;
+
+
+height: 84px;
+
+
+/* Paragraph 01 */
+
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400px;
+font-size: 20px;
+line-height: 28px;
+/* or 140% */
+
+letter-spacing: -0.4px;
+
+/* Text Secondary */
+
+color: #979797;
+
+mix-blend-mode: normal;
+
+}
+
+.box1 {
+    position:relative;
+    top: 15px;
+}
+.boxglobal {
+    position:relative;
+    
+    
+
+    
+    /* Button 03 */
+    
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin: auto;
+   
+   
+   
+    width: 215px;
+    height: 50px;
+    justify-items: center;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto; 
+
+    border: 1px solid;
+    border-width: 2px;
+    
+    
+    
+    /* identical to box height, or 138% */
+    
+    text-align: center;
+    letter-spacing: -0.4px;
+    
+    /* Primary */
+    
+    color: #0D0D0D;
+
+}
+
+.vidimg {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 604px;
+height: 601px;
+
+}
+
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1.3s cubic-bezier(0.115, 0.410, 0.755, 1.000) both;
+	        animation: tracking-in-expand 1.3s cubic-bezier(0.115, 0.410, 0.755, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0.3);
+              transform: scale(0.3);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0.3);
+              transform: scale(0.3);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
