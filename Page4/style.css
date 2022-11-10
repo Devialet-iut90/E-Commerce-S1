@@ -128,10 +128,16 @@ span {
 }
 
 
-span::after {
+span:before {
     float: right;
     right: 10%;
     content: "+";
+}
+
+span:hover:before{
+    float: right;
+    right: 10%;
+    content: "-";
 }
 
 

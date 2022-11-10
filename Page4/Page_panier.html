@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title> Uzed Panier </title>
-    <link rel="shortcut icon" href="../image/icon.ico">
+    <link rel="shortcut icon" href="images/icon.ico">
 </head>
 <body>
 <header>
 
 </header>
-    
+
 <main>
+    <audio id="myAudio">
+        <source src="images/MarioDeath.mp3" type="audio/mpeg">
+    </audio>
+        <audio id="myAudio2">
+            <source src="images/CLICK_Nice.mp3" type="audio/mpeg">
+        </audio>
+
     <div class="panier">
         <div class="achats">
             <h1> Votre panier </h1>
             <p id="texte"> Pas encore prêt à poursuivre ? Continuer à acheter </p>
                 <div class="produits">
                     <div class="produit">
-                            <img src="../image/teeshirttroué.webp" alt="teeshirttroué">
+                            <img src="images/teeshirttroué.webp" alt="teeshirttroué">
                         <div class="prod">
                             <h2> Cheese-shirt  </h2>
                             <p> Taille : XXL </p>
@@ -26,13 +33,13 @@
                             <p> Quantité : 1 </p>
                             <h3> 99€ </h3>
                             <div>
-                                <a href="#"> Supprimer </a>
+                                <a href="#" onclick="playAudio()"> Supprimer </a>
                             </div>
                         </div>
                     </div>
                     <hr>
                     <div class="produit">
-                        <img src="../image/litdegeulasse.png" alt="litdegueulasse">
+                        <img src="images/litdegeulasse.png" alt="teeshirttroué">
                     <div class="prod">
                         <h2> L'explosion </h2>
                         <p> Taille : XL </p>
@@ -40,7 +47,7 @@
                         <p> Quantité : 1 </p>
                         <h3> 99€ </h3>
                         <div>
-                            <a href="#"> Supprimer </a>
+                            <a href="#" onclick="playAudio()"> Supprimer </a>
                         </div>
                     </div>
                 </div>
@@ -68,7 +75,7 @@
                     <p> 198€ </p>
                 </div>
                 <br><br>
-                <button href="#" id="buy" type="submit"> Continuer pour acheter </button> 
+                <button href="#" id="buy" type="submit" onclick="playAudio2()"> Continuer pour acheter </button> 
             </div>
         </div>
     </div>
@@ -173,6 +180,19 @@
         </div>
     </div>
 </footer>
+
+<script>
+    var x = document.getElementById("myAudio"); 
+    
+    function playAudio() { 
+      x.play(); 
+    }
+    var y = document.getElementById("myAudio2");
+
+    function playAudio2() { 
+      y.play(); 
+    } 
+</script>
 
 </body>
 </html>
