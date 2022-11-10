@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.panier{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    padding: 20px;
+}
+
+/************* GAUCHE *************/
+
+.achats{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    margin: 20px 10px 10px 50px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+
+.produits{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 129px;
+    height: 133px;
+}
+
+.produit{
+    display: flex;
+    padding: 20px 0 0 0;
+}
+
+
+.prod{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    line-height: 30px;
+    width: 100%;
+}
+
+a{
+    color: #000000;
+    text-decoration-line: underline;
+}
+
+.prod div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/************* DROITE *************/
+
+.checkout{
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+    margin: 20px 10px 10px 60px;
+}
+
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0 0;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+}
+
+.recap{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0 10px 0;
+}
+
+.checkout button{
+    background-color: black;
+    color: #FFFF;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/************* BAS GAUCHE *************/
+
+.OrderInformation {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 55%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.contenu{
+    width: 70%;
+    margin-left: 25%;
+}
+
+span {
+    padding : 5px;
+    font-size : 1em;
+    font-variant : "sans-serif";
+    cursor : pointer;
+    display: block;
+}
+
+
+span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+}
+
+
+.slide {
+    clear: both;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+  
+.slide p {
+    padding : 10px;
+}
+  
+#touch {
+    position: absolute; 
+    opacity: 0; height: 
+    0px;
+}
+
+#touch1 {
+    position: absolute; 
+    opacity: 0; 
+    height: 0px;
+}   
+
+#touch2 {
+    position: absolute; 
+    opacity: 0; 
+    height: 0px;
+}       
+      
+  
+#touch:checked + .slide {height: 30px;} 
+#touch1:checked + .slide {height: 30px;} 
+#touch2:checked + .slide {height: 30px;} 
+
