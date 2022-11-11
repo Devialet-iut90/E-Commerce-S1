@@ -6,8 +6,8 @@ Notre site de E-commerce propose une seconde vie à vos vêtements et sous-vête
 Il présentera différents types de vêtements comme des t-shirts, joggings, jeans, bonnets, etc. Le tout usagés, sales ou troués ou encore les 3 en mêmes temps. <br>
 Il présente également la même chose pour les sous-vêtements comme des slips, des caleçons, des chaussettes, des maillots de bain, etc.
 ## Attribution
-LANCON Johan : La page d'accueil <br>
-LEITAO Manuel : Le magasin <br>
-POILBOIS Marco : La page de production <br>
-FULCRAND Lucas : Le panier <br>
-AIT BOUKRIM Smain : Le Footer, la Navbar et le Responsive
+LANCON Johan : La page d'accueil + responsive <br>
+LEITAO Manuel : Le magasin + responsive, Navbar <br>
+POILBOIS Marco : La page de production + responsive <br>
+FULCRAND Lucas : Le panier + responsive <br>
+AIT BOUKRIM Smain : Le Footer, Responsive de la Navbar + Footer
