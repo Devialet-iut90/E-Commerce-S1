@@ -257,7 +257,14 @@ h1,
     font-size: 950%;
 }
 
-/** footer **/
+/******************************************************************** boite 2 ********************************************************************/
+.boite2{
+    display: none;
+}
+
+
+
+/******************************************************************** footer ********************************************************************/
 
 footer {
     flex-shrink: 0;
@@ -351,7 +358,7 @@ footer {
     text-decoration: none;
 }
 
-/** Nav Bar **/
+/******************************************************************** Nav Bar ********************************************************************/
 
 .nav{
     background-color: black;
@@ -438,3 +445,187 @@ footer {
       opacity: 1;
     }
   }
+
+
+@media screen and (max-width: 1300px){
+    .ranger2{
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .first {
+        background-color: white;
+        padding-bottom: 50px;
+    }
+    
+    h1,
+    .paragraphe1 {
+        display: flex;
+        justify-content: center;
+        color: black;
+        margin: 0 0 0 0;
+        padding: 0 5% 0 5%;
+    }
+    
+    .paragraphe1 {
+        color: #999999;
+        font-size: 18px;
+    }
+
+/******************************************************************** boite 1 ********************************************************************/
+
+    .boite{
+        display: none;
+    }
+    
+/******************************************************************** boite 2 ********************************************************************/
+
+    .boite2{
+        display: contents;
+    }
+
+    .etape1{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+
+    .gauche2{
+        padding-left: 5%;
+    }
+
+    .droite2{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5%;
+    }
+
+    .ranger4{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .ranger6{
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .ranger5{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border: 1px solid #1C275A;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .etape2{
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carre {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #0D0D0D;
+        position: relative;
+    }
+    
+    .checkbox {
+        display: flex;
+        width:33%;
+        padding-bottom: 30px;
+    }
+    
+    .checkbox:active{
+        font-weight: bold;
+    }
+    
+    .checkbox:active > .carre{
+        border: 2px solid black;
+    }
+    
+    .textcheckbox {
+        font-size: 13px;
+    }
+
+    .couleur {
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 9px;
+    }
+
+    .etape3{
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 5%;
+    }
+
+    .etape4{
+        margin-left: 5%;
+        padding-right: 5%;
+        margin-top: 10%;
+    }
+
+    .all{
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        margin-top: 5%;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    
+    .article{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid rgb(116, 116, 116);
+        width: 90%;
+        margin-bottom: 8%;
+    }
+
+    .more{
+        display: flex;
+        justify-content: center;
+        font-size: 130%;
+        border: 2px solid black;
+        width: 90%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 20%;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .all{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        left: 5%;
+        right: 5%;
+        width: 100%;
+        margin-top: 5%;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+}
