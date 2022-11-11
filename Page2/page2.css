@@ -336,4 +336,93 @@ footer {
     text-decoration: none;
 }
 
+
+
+
 /** Nav Bar **/
+
+.nav{
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid gray;
+}
+
+.gauche a, .droite a{
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.gauche{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+}
+
+.droite{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 4%;
+}
+
+.gauche a:hover, .droite a:hover{
+    color: #e72525;
+    transition: color 0.5s;
+}
+
+.ensembl1{
+    display: flex;
+    gap: 10px;
+}
+
+.ensembl2{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.anim1{
+    -webkit-animation: anim1 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: anim1 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@-webkit-keyframes anim1 {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes anim1 {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
