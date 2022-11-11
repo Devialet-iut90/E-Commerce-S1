@@ -1,6 +1,44 @@
-.container{
+.container {
   display: flex;
   justify-content: center;
+}
+
+
+/****************************** Responsive ******************************/
+
+@media screen and (max-width: 900px){
+
+    .cart{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+      width: 33.33%;
+    }
+
+    .bord{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+      width: 50%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0;
+        width: 77.77%;
+    }
+
+    p{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0;
+        width: 50%;
+    }
 }
 
 
@@ -24,10 +62,6 @@
     padding-top: 1%;
     padding-bottom: 1%;
     border-bottom: 1px solid gray;
-}
-
-input[type="search"] {
-  font-size: 16px;
 }
 
 .gauche a, .droite a{
@@ -108,29 +142,28 @@ input[type="search"] {
 
 .cart{
   border: 1px solid white;
-  width: 500px;
-  height: 600px;
+  width: 27%;
   background-color: #C4C4C4;
-  margin-top: 100px;
+  margin-top: 7%;
   margin-left: 200px;
 }
 .block{
   border: 1px solid white;
-  width: 500px;
-  margin-left: 501px;
-  margin-top: -563px;
+  width: 27%;
+  margin-left: 101%;
+  margin-top: -113%;
 }
 .bord{;
   background-color: #C4C4C4;
-  width: 100px;
+  width: 70%;
   height: 600px;
 }
 .container-text{
   border: 1px solid white;
-  width: 550px;
-  height: 450px;
+  width: 550%;
+  height: 75%;
   display: flex;
-  margin-left: 100px;
+  margin-left: 101%;
 }
 
 /******************************  Texte  ******************************/
@@ -144,7 +177,7 @@ p{
 
 /******************************  Images  ******************************/
 
-.images{margin-top: 80px;}
+.images{margin-top: 16%;}
 
 /******************************  Quantité du panier  ******************************/
 
@@ -170,12 +203,12 @@ p input,
 /******************************  Liste déroulante  ******************************/
 
 p select{
-  width: 48px;
-  height: 30px;
+  width: 20%;
+  height: 7%;
   background-color: white;
   border-radius: 5px;
   border-color: #dfdfdf;
-  margin-left: 15px;
+  margin-left: 10%;
 }
 
 /******************************  Boutons  ******************************/
@@ -190,23 +223,23 @@ input:hover{
 /* "Carte de réduction" et achat */
 
 .acheter, .carte{
-  height: 40px;
+  height: 9%;
   font-size: 0.5em;
-  margin-top: 60px;
+  margin-top: 20%;
 }
 .acheter{
   background-color: blue ;
   color: white;
   border-radius: 5px;
-  border-color: # #000000 ;
-  width: 100px;
+  border-color: #000000 ;
+  width: 50%;
 }
 .carte{
   background-color: black;
   color: white;
   border-radius: 5px;
   border-color: #d6d2d2 ;
-  width: 150px;
+  width: 75%;
 }
 
 /******************************  Slide  ******************************/
@@ -214,7 +247,6 @@ input:hover{
 /* Contenue du slide */
 
 .slideshow-container {
- max-width: 1000px;
  position: relative;
  margin: auto;
 }
