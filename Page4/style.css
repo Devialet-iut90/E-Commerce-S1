@@ -1,12 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-/************* HEADER *************/
 
+/************* NAVBAR *************/
+
+
+.nav{
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid gray;
+}
+
+.gauche a, .droite a{
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.gauche{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+}
+
+.droite{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 4%;
+}
+
+.gauche a:hover, .droite a:hover{
+    color: #e72525;
+    transition: color 0.5s;
+}
+
+.ensembl1 img{
+    width: 18px;
+    height: 18px;
+}
+
+.ensembl2 img{
+    width: 18px;
+    height: 18px;
+  }
+
+.ensembl1{
+    display: flex;
+    gap: 10px;
+}
+
+.ensembl2{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.anim1{
+    -webkit-animation: anim1 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: anim1 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+
+@-webkit-keyframes anim1 {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes anim1 {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
 
 /************* Boite contenant le tout (achats, checkout et informations) *************/
 
@@ -128,25 +228,45 @@ span {
 }
 
 
-span:before {
-    float: right;
-    right: 10%;
-    content: "+";
+label{
+    display: block;
+    padding: 8px 0 0 0;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: ease .5s;
+    position: relative;
 }
 
-span:hover:before{
-    float: right;
-    right: 10%;
-    content: "-";
+label::after{
+    content: '+';
+    color: #000000;
+    font-size: 22px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+input[type=checkbox]:checked + label:after{
+    content: '-';
+    right: 14px;
+    top: 10px;
 }
 
 
 .slide {
-    clear: both;
     width: 100%;
-    height: 0;
-    overflow: hidden;
-    transition: height .4s ease;
+}
+
+input[type=checkbox] + label + .slide{
+    display: none;
+}
+
+input[type=checkbox]:checked + label + .slide{
+    display: block;
+}
+
+input[type=checkbox]{
+    display: none;
 }
   
 .slide p {

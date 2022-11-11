@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title> Uzed Panier </title>
-    <link rel="shortcut icon" href="../image/icon.ico">
+    <title> Uzed - Panier </title>
+    <link rel="shortcut icon" href="images/icon.ico">
 </head>
 <body>
-<header>
+    <div class="anim1">
+        <div class="nav">
 
-</header>
+            <div class="gauche">
+                <a href="" style="font-weight: bold;">UZED</a>
+                <a href="">Magasins</a>
+                <a href="">Histoire</a>
+                <a href="">Concernant</a>
+                <div class="ensembl1">
+                    <img class="loupe" img src="images/Search.png" alt="Loupe"></a>
+                    <input class="recherche" type="search" name="" size="10" placeholder="Rechercher">
+                </div>
+            </div>
+    
+            <div class="droite">
+                <div class="ensembl2">
+                    <div>
+                        <img id="vector" img src="images/Vector.png" alt="vector">
+                        <a href="">3</a>
+                    </div>
+                    <a href="">Connexion</a>
+                </div>
+
+            </div>
+    
+        </div>
+    </div>
 
 <main>
     <audio id="myAudio">
-        <source src="../image/MarioDeath.mp3" type="audio/mpeg">
+        <source src="images/MarioDeath.mp3" type="audio/mpeg">
     </audio>
         <audio id="myAudio2">
-            <source src="../image/CLICK_Nice.mp3" type="audio/mpeg">
+            <source src="images/CLICK_Nice.mp3" type="audio/mpeg">
         </audio>
 
     <div class="panier">
@@ -25,7 +49,7 @@
             <p id="texte"> Pas encore prêt à poursuivre ? Continuer à acheter </p>
                 <div class="produits">
                     <div class="produit">
-                            <img src="../image/teeshirttroué.webp" alt="teeshirttroué">
+                            <img src="images/teeshirttroué.webp" alt="teeshirttroué">
                         <div class="prod">
                             <h2> Cheese-shirt  </h2>
                             <p> Taille : XXL </p>
@@ -39,7 +63,7 @@
                     </div>
                     <hr>
                     <div class="produit">
-                        <img src="../image/litdegeulasse.png" alt="litdegeulasse">
+                        <img src="images/litdegeulasse.png" alt="teeshirttroué">
                     <div class="prod">
                         <h2> L'explosion </h2>
                         <p> Taille : XL </p>
@@ -88,34 +112,35 @@
             <hr style="border: 1px solid black; ">
             <br>
 
-            <div class="info" style="color: grey;">
-                <label for="touch"><span> Politique de renvoie </span></label>               
+            <div class="info" style="color: grey;">               
                 <input type="checkbox" id="touch"> 
+                <label for="touch"><span> Politique de renvoie </span></label>
 
                 <div class="slide">
-                    <p href="#"> Ceci est un exemple de politique de renvoie. </p>
+                    <p href="#"> Si vous souhaitez retourner ou échanger votre commande pour quelques raisons que ce soit, bah vous ne pouvez pas, tant pis pour vous. <br><br>
+                        Une fois le produit acheté, il est définitivement à vous. En vous souhaitant une bonne journée de merde avec vos articles achetés dans notre magnifique magasins. </p>
                 </div>
                 
                 <br>
                 <hr>
                 <br>
-
-                <label for="touch1"><span> Option de livraison </span></label>               
-                <input type="checkbox" id="touch1"> 
+               
+                <input type="checkbox" id="touch1">
+                <label for="touch1"><span> Option de livraison </span></label> 
 
                 <div class="slide">
-                    <p href="#"> Voici les options de livraisons différentes disponible.</p> 
+                    <p href="#"> La livraison en France est offerte après 100€ d'achats.</p> 
                 </div>
 
                 <br>
                 <hr>
                 <br>
-
-                <label for="touch2"><span> Option de livraison </span></label>               
+               
                 <input type="checkbox" id="touch2"> 
+                <label for="touch2"><span> Option de livraison </span></label>
 
                 <div class="slide">
-                    <p href="#"> Voici les options de livraisons différentes disponible.</p> 
+                    <p href="#"> Vos colis se feront livrer par les horaires des camions de poubelles de votre ville.</p> 
                 </div>
 
                 <br>
@@ -132,7 +157,6 @@
             <h3>Inscrivez-vous à notre newsletter</h3>
             <p>Soyez le premier à être informé de nos offres spéciales, du lancement de nouveaux produits et de nos
                 événements.</p>
-            <label for="mail"></label>
             <input class="mail" type="email" id="name" name="name" required minlength="4" size="60" placeholder="Adresse Mail">
             <button id="sign" type="submit"><a href="https://www.youtube.com/watch?v=Ux5cQbO_ybw&t=4s"> S'inscrire</a></button>
         </div>
