@@ -3,6 +3,103 @@
   justify-content: center;
 }
 
+
+/****************************** Navbar ******************************/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.nav{
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid gray;
+}
+
+.gauche a, .droite a{
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.gauche{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+}
+
+.droite{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 4%;
+}
+
+.gauche a:hover, .droite a:hover{
+    color: #e72525;
+    transition: color 0.5s;
+}
+
+.ensembl1{
+    display: flex;
+    gap: 10px;
+}
+
+.ensembl2{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.anim1{
+    -webkit-animation: anim1 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: anim1 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@-webkit-keyframes anim1 {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes anim1 {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
 /****************************** Structure ******************************/
 
 .cart{
@@ -35,10 +132,11 @@
 /******************************  Texte  ******************************/
 
 p{
-  font-family: 'Public Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 2em;
   margin-left: 50%;
 }
+
 
 /******************************  Images  ******************************/
 
@@ -46,22 +144,30 @@ p{
 
 /******************************  Quantité du panier  ******************************/
 
-p input{
+p input,
+.qté-moins,
+.qté-plus{
   width: 30px;
+  height: 30px;
   border-color: black;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /******************************  Nombres  ******************************/
 
-.Total{
+/*.Total{
   border: 1px solid black;
   width: 30px;
   border-radius: 5px;
-}
+  margin-left: 20px;
+}*/
 
 /******************************  Liste déroulante  ******************************/
 
 p select{
+  width: 48px;
+  height: 30px;
   background-color: white;
   border-radius: 5px;
   border-color: #dfdfdf;
@@ -70,10 +176,15 @@ p select{
 
 /******************************  Boutons  ******************************/
 
+/* Choix du produit */
+
 input:hover{
   font-size:40px;
   transition: ease-in-out 0.5s;
 }
+
+/* "Carte de réduction" et achat */
+
 .acheter, .carte{
   height: 40px;
   font-size: 0.5em;
@@ -96,8 +207,6 @@ input:hover{
 
 /******************************  Slide  ******************************/
 
-* {box-sizing:border-box}
-
 /* Contenue du slide */
 
 .slideshow-container {
@@ -106,7 +215,7 @@ input:hover{
  margin: auto;
 }
 
-/* Cache l'image par défaut */
+/* Caché l'image par défaut */
 
 .mySlides {
  display: none;
@@ -132,7 +241,7 @@ input:hover{
   background-color: white;
 }
 
-/* Les points/cercles */
+/* Les points/repaires */
 
 .dot {
  cursor: pointer;
@@ -150,7 +259,7 @@ input:hover{
  background-color: black;
 }
 
-/* Animation et images*/
+/* Animation des images*/
 
 .fade {
  animation-name: fade;
@@ -160,4 +269,75 @@ input:hover{
 @keyframes fade {
  from {opacity: .4}
  to {opacity: 1}
+}
+
+/******************************  Footer  ******************************/
+
+footer {
+    flex-shrink: 0;
+    border-top: 1px solid #000;
+    width: 100%;
+    background: #f1f1f1;
+    color: #333;
+    margin-top: 150px;
+}
+
+.contenu-footer{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+
+.blo{
+    width: 25%;
+    margin: 0 30px;
+}
+
+.footer-shop h3,
+.footer-help h3,
+.footer-about h3{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.footer-shop h3,
+.footer-shop li{
+    padding-left: 96px;
+}
+
+.footer-newsletter h3{
+    font-size: 26px;
+}
+
+.footer-newsletter p{
+    font-size: 14px;
+    margin-left: -1px;
+}
+
+.liste-shop,
+.liste-help,
+.liste-about{
+    list-style-type: none;
+    font-size: 16px;
+    text-align: left;
+    margin-left: -2.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.liste-shop a,
+.liste-help a,
+.liste-about a{
+    color: gray;
+    text-decoration: none;
+}
+
+.mail{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 2em;
 }
