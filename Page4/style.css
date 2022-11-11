@@ -393,3 +393,53 @@ footer {
 }
 
 
+/************* RESPONSIVE *************/
+
+
+
+@media screen and (max-width: 600px){
+
+    h1{
+        margin-bottom: 0%;
+    }
+
+    #texte{
+        margin-top: -20%;
+        margin-bottom: -10%;
+    }
+
+    #titre{
+        margin-bottom: 10%;
+    }
+
+    .supp{
+        margin-top: -20%;
+    }
+
+    .panier{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        width: 85%;
+    }
+
+
+    .checkout{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0;
+        width: 100%;
+    }
+
+    .OrderInformation{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 110%;
+        padding: 2%;
+        margin-left: -20%;
+    }
+
+}
